@@ -1,0 +1,21 @@
+@import '../../index.scss';
+
+header{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    h1{
+        font-size: 22px;
+    }
+    
+
+}
+
+.header-links{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}

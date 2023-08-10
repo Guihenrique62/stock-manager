@@ -1,0 +1,25 @@
+@import '../../index.scss';
+
+.quantityBox{
+    max-width: 280px;
+    height: 200px;
+    background-color: var(--bg-blue-light);
+    text-align: center;
+
+    .contentTitle{
+        text-align: start;
+        padding: 1rem;
+    }
+
+    .contentQuantity{
+        font-size: 52px;
+        margin: 0;
+    }
+}
+
+.containerDashboard{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
