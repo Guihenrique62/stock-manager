@@ -5,14 +5,19 @@ import HeaderComponent from "../components/HeaderComponent/HeaderComponent";
 export default function Dashboard(){
 
     return (
-        <div className="containerDashboard">
-            <HeaderComponent/>
-            <h2>Dashboard</h2>
+        <>
+        <HeaderComponent/>
+        <h2 className="dashboardTitle">Dashboard</h2>
+        <section className="containerDashboard">
             <QuantityBox title='teste' quantity='125'/>
             <QuantityBox title='343kj3rlkwej' quantity='125'/>
             <QuantityBox title='teste' quantity='125'/>
             <QuantityBox title='teste' quantity='125'/>
+        </section>
 
-        </div>
+        <section className="ListOfItemsContainer">
+    
+        </section>
+        </>
     )
 }

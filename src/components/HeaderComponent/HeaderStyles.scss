@@ -2,11 +2,10 @@
 
 header{
     display: flex;
-    justify-content: center;
-    display: flex;
     justify-content: space-between;
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    padding: 0px var(--paddingDefault);
+    margin: 0;
     h1{
         font-size: 22px;
     }
@@ -18,4 +17,5 @@ header{
     display: flex;
     justify-content: space-around;
     gap: 1rem;
+    padding-right: 1rem;
 }
