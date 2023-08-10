@@ -6,7 +6,6 @@ export default function Dashboard(){
 
     return (
         <>
-        <HeaderComponent/>
         <h2 className="dashboardTitle">Dashboard</h2>
         <section className="containerDashboard">
             <QuantityBox title='teste' quantity='125'/>
