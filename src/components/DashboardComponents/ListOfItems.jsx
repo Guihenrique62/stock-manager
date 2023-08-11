@@ -1,13 +1,26 @@
-export default function ListOfItems(arrayOfItens){
+import { useContext } from "react"
+import { StockContext } from "../../context/StockContext"
+
+export default function ListOfItems(){
+
+    const { items } = useContext(StockContext)
 
     return (
         <div className="ListOfItems">
                 <table>
                     <thead>
-                        <th>Itens Recentes</th>
-                        <th>Ações</th>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Ação</th>
+                        </tr>
                     </thead>
                     <tbody>
+                        {items.map((item) => {
+                            <tr key={item.id}>
+                                <td>{item.name}</td>
+                                <td>{item.id}</td>
+                            </tr>
+                        })}
                     </tbody>
                 </table>
         </div>
