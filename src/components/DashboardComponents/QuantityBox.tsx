@@ -1,3 +1,4 @@
+import React from 'react';
 import './QuatityBoxStyle.scss';
 
 export default function QuantityBox({title,quantity}){

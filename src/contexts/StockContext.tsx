@@ -1,8 +1,9 @@
+import React from "react";
 import { createContext, useState } from "react";
 
 export const StockContext = createContext({})
 
-export function StockContextProvider({Children}){
+export function StockContextProvider({children}){
     const [items, setItems] = useState(()=> {
         const storedItems = localStorage.getItem('obc-react-stock')
         if (!storedItems) return []
@@ -29,7 +30,7 @@ export function StockContextProvider({Children}){
 
     return(
         <StockContext.Provider value={stock}>
-            {Children}
+            {children}
         </StockContext.Provider>
     )
 }

@@ -1,5 +1,6 @@
 import { useContext } from "react"
-import { StockContext } from "../../context/StockContext"
+import { StockContext } from "../../contexts/StockContext"
+import React from "react"
 
 export default function ListOfItems(){
 

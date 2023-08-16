@@ -1,6 +1,5 @@
 import React from "react";
 import QuantityBox from "../components/DashboardComponents/QuantityBox";
-import HeaderComponent from "../components/HeaderComponent/HeaderComponent";
 
 export default function Dashboard(){
 
