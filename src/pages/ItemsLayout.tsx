@@ -7,10 +7,10 @@ export default function ItemsLayout(){
 
     return (
         <main className="main-items">
-            <h1>stock items</h1>
+            <h1 className="stock-item-title">Stock Items</h1>
             <div className="tabs">
-                <Link to='/items'>Items</Link>
-                <Link to='/items/new'>Novo Item</Link>
+                <Link to='/items' className="tabs-link tab-link-active">Items</Link>
+                <Link to='/items/new' className="tabs-link">Novo Item</Link>
             </div>
             <Outlet/>
         </main>

@@ -1,5 +1,32 @@
 @import '../index.scss';
 
 .main-items{
-    background-color: blue;
+    padding: 0px 2rem 2rem;
+
+    .stock-item-title{
+        color: var(--text-light);
+        
+        font-size: 38px;
+        font-weight: 300;
+    }
+
+    .tabs{
+        display: flex;
+        gap: var(--paddingDefault);
+        padding: 0 0 1rem 0.5rem;
+
+        .tabs-link{
+            text-decoration: none;
+            color: #fff;
+            width: 5%;
+            text-align: center;
+        }
+
+        .tab-link-active{
+            color: var(--pink);
+            border-bottom: 2px solid var(--pink);
+            padding: 0 0 0.6rem 0;
+            
+        }
+    }
 }
