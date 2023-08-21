@@ -9,8 +9,8 @@ export default function HeaderComponent(){
         <header>
             <h1><Link to='/' className='nav-link'>REACT STOCK</Link></h1>
             <div className="header-links">
-                <Link to='/' className={`nav-link ${pathname !== "/items" ? "activeLink":''}`}>Inicio</Link>
-                <Link to='/items' className={`nav-link ${pathname === "/items" ? "activeLink":''}`}>Itens</Link>
+                <Link to='/' className={`nav-link ${pathname === "/" ? "activeLink":''}`}>Inicio</Link>
+                <Link to='/items' className={`nav-link ${pathname === "/items" ? "activeLink":''} ${pathname === "/items/new" ? "activeLink":''}`}>Itens</Link>
             </div>
         </header>
     )
