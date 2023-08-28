@@ -1,5 +1,7 @@
 import React from "react";
 import QuantityBox from "../components/DashboardComponents/QuantityBox";
+import CurrentItemsTable from "../components/DashboardComponents/CurrentItemsTable";
+import FinishedItemsTable from "../components/DashboardComponents/FinishedItemsTable";
 
 export default function Dashboard(){
 
@@ -13,8 +15,9 @@ export default function Dashboard(){
             <QuantityBox title='teste' quantity='125'/>
         </section>
 
-        <section className="ListOfItemsContainer">
-    
+        <section className="dashboardTable">
+            <CurrentItemsTable/>
+            <FinishedItemsTable/>
         </section>
         </>
     )

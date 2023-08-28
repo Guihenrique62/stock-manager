@@ -1,12 +1,10 @@
 import React, { useContext } from "react";
 import { StockContext } from "../../contexts/StockContext";
 import './ItemsTable.scss'
-
 export default function ItemsTable(){
 
     const {items} = useContext(StockContext)
-
-
+    	
     return( 
         <table className="tableOfItems">
             <thead className="table-head">
@@ -19,47 +17,21 @@ export default function ItemsTable(){
                 </tr>
             </thead>
             <tbody className="table-body">
-                {/* {items.map((item)=> (
-                    <tr key={item.id}>
+                {items.map((item)=> (
+                    <tr key={item.id} className="table-body-trs">
                         <td>{item.id}</td>
-                        <td>{item.name}</td>
-                        <td>{item.quantity}</td>    
+                        <td className="nameTB">{item.name}</td>
+                        <td>{item.quantity}</td>
+                        <td>{item.category}</td>
+                        <td className="actionTB">
+                            <button className="iconsBtn"><img src='../../../public/lupa.png' alt="lupa"/></button>
+                            <button className="iconsBtn"><img src='../../../public/setas-circulares.png' alt="atualizar" /></button>
+                            <button className="iconsBtn"><img src='../../../public/lixeira.png' alt="lixeira" /></button>
+                        </td>  
                     </tr>
                     
-                ))} */}
-                <tr className="table-body-trs">
-                    <td>2</td>
-                    <td id="nameTB">o senhor dos aneis</td>
-                    <td>4</td>
-                    <td>ação</td>
-                    <td>
-                        <a href="">lupa</a>
-                        <a href="">lixo</a>
-                        <a href="">atualizar</a>
-                    </td>
-                </tr>
-                <tr className="table-body-trs">
-                    <td>2</td>
-                    <td id="nameTB">o senhor dos aneis</td>
-                    <td>4</td>
-                    <td>ação</td>
-                    <td>
-                        <a href="">lupa</a>
-                        <a href="">lixo</a>
-                        <a href="">atualizar</a>
-                    </td>
-                </tr>
-                <tr className="table-body-trs">
-                    <td>2</td>
-                    <td id="nameTB">o senhor dos aneis</td>
-                    <td>4</td>
-                    <td>ação</td>
-                    <td>
-                        <a href="">lupa</a>
-                        <a href="">lixo</a>
-                        <a href="">atualizar</a>
-                    </td>
-                </tr>
+                ))}
+                
             </tbody>
         </table>
     )
