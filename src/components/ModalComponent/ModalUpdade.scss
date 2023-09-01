@@ -1,0 +1,120 @@
+@import url("../../index.scss");
+
+.container-update-bg{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.445);
+    z-index: 1000;
+}
+
+.container-update{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem;
+    background-color: var(--bg-blue-dark);
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px rgba(4, 4, 4, 0.426);
+    display: flex;
+    flex-direction: column;
+
+    
+    .titleModalUpdate{
+        display: flex;
+        justify-content: space-between;
+
+        .closeXUpdate{
+            width: 1rem;
+
+            img{
+                width: 100%;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        h3{
+            margin: 0 0 2rem 0;
+        }
+    }
+}
+
+.form-update{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    'name quantity price category'
+    'description description description description'
+    'none none none button';
+    gap: 2rem;
+
+    label{
+        padding-left: .2rem;
+    }
+
+    input{
+        border: 1px solid rgb(133, 120, 206);
+        border-radius: 5px;
+        padding: .5rem;
+        background-color: var(--bg-blue-light);
+        color: white;
+
+        &:focus{
+            outline: none;
+        }
+
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            appearance: none;
+            margin: 0;
+            
+        }
+    }
+
+    select{
+        border: none;
+        border-radius: 5px;
+        padding: .5rem;
+        background-color: var(--bg-blue-light);
+        color: white;
+        border: 1px solid rgb(133, 120, 206);
+
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    
+        &:focus {
+            outline: none;
+          }
+
+    }
+
+    #description{
+        width: 100%;
+        background-color: var(--bg-blue-light);
+        border: none;
+        color: #fff;
+        border-radius: 10px;
+        border: 1px solid rgb(133, 120, 206);
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .nameInputUpdate{grid-area: name;}
+    .quantityInputUpdate{grid-area: quantity;}
+    .priceInputUpdate{grid-area: price;}
+    .categoryInputUpdate{grid-area: category;}
+    .descriptionInputUpdate{grid-area: description;}
+    .createitembutton{grid-area: button; justify-self: end;align-self: end; margin: .5rem;}
+}
+

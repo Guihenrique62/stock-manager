@@ -10,8 +10,9 @@ export default function FinishedItemsTable() {
                     <th>Ações</th>
                 </tr>
             </thead>
+           
             <tbody className='finished-item-body'>
-                <div className='container-table'>
+                
                     <tr className='finished-tr-body'>
                         <td>O senhor do aneis</td>
                         <td id='quantity-finished'>8</td>
@@ -20,11 +21,6 @@ export default function FinishedItemsTable() {
                         </td>
                     </tr>
                     
-                    
-                    
-                   
-                </div>
-                
             </tbody>
         </table>
   )

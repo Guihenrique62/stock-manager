@@ -45,4 +45,25 @@
     .priceInput{grid-area: price;}
     .categoryInput{grid-area: category;}
     .descriptionInput{grid-area: description;}
+
+    .newitemForm-container{
+        .newCategoryInput{
+            border: none;
+            border-radius: 5px;
+            padding: .5rem;
+            background-color: var(--bg-blue-light);
+            color: white;
+            border: 1px solid rgb(133, 120, 206);
+    
+    
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        
+            &:focus {
+                outline: none;
+              }
+    
+        }
+    }
 }

@@ -10,8 +10,9 @@ export default function CurrentItemsTable() {
                     <th>Ações</th>
                 </tr>
             </thead>
+           
             <tbody className='current-item-body'>
-                <div className='container-table'>
+                
                     <tr className='current-tr-body'>
                         <td>O senhor do aneis</td>
                         <td className='button-current-td'>
@@ -43,7 +44,7 @@ export default function CurrentItemsTable() {
                     </tr>
                     
                    
-                </div>
+                
                 
             </tbody>
         </table>

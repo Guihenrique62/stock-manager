@@ -1,7 +1,9 @@
 import React from "react";
 import { createContext, useState } from "react";
 
+
 export const StockContext = createContext({})
+
 
 export function StockContextProvider({children}){
     const [items, setItems] = useState(()=> {
@@ -22,11 +24,12 @@ export function StockContextProvider({children}){
             return updatedItems
         })
     }
-
+    
     const stock = {
         items,
         addItem
     }
+
 
     return(
         <StockContext.Provider value={stock}>
